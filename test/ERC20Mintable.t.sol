@@ -15,7 +15,12 @@ contract ERC20MintableTest is Test{
 
     function testMint() public{
         e.mint(100, owner);
+        assertEq(e.balanceOf(owner), 100);
     }
 
-
+    function testBurn() public{
+        e.mint(100, owner);
+        e.burn(owner, 100);
+        assertEq(e.balanceOf(owner), 0);
+    }
 }
