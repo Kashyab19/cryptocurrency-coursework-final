@@ -1,5 +1,12 @@
 Uniswapv2 - Foundry
 
+Steps to reproduce:
+- git clone https://github.com/Kashyab19/cryptocurrency-coursework-final.git
+- cd folder_name
+- forge build 
+- forge coverage
+
+
 Running tests...
 | File                         | % Lines          | % Statements     | % Branches     | % Funcs        |
 |------------------------------|------------------|------------------|----------------|----------------|
