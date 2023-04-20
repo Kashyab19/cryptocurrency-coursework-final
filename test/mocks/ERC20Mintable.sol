@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.10;
+pragma solidity ^0.8.19;
 
 import "solmate/tokens/ERC20.sol";
 
@@ -11,4 +11,5 @@ contract ERC20Mintable is ERC20 {
     function mint(uint256 amount, address to) public {
         _mint(to, amount);
     }
+
 }

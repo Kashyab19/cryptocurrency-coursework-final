@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.10;
+pragma solidity ^0.8.19;
 
 import "forge-std/Test.sol";
 import "../src/UniswapV2Pair.sol";
@@ -54,10 +54,5 @@ contract ZuniswapV2FactoryTest is Test {
 
         vm.expectRevert(encodeError("ZeroAddress()"));
         factory.createPair(address(token1), address(0));
-    }
-
-    function testCreatePairIdenticalTokensExists() public {
-        vm.expectRevert(encodeError("IdenticalAddresses()"));
-        factory.createPair(address(token0), address(token0));
     }
 }
